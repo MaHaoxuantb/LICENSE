@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>ConiWords-EN</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="19cd68c6-a01e-806f-8d33-fb677ccff2fd" class="page sans"><header><h1 class="page-title">ConiWords-EN</h1><p class="page-description"></p></header><div class="page-body"><h1 id="19cd68c6-a01e-807f-8ed8-df2e2dc2d110" class="">ConiWords User Agreement</h1><p id="19cd68c6-a01e-8038-b2bb-f22c4ccc00da" class=""><strong>Version: 2025-02-16</strong></p><p id="19cd68c6-a01e-8047-b64c-c23b06ba1832" class=""><strong>Effective Date: February 4, 2025</strong></p><hr id="19cd68c6-a01e-8067-a7f3-f73f60cfc9bf"/><h2 id="19cd68c6-a01e-8083-ae4a-c66487260b9f" class="">Table of Contents</h2><ol type="1" id="19cd68c6-a01e-80d8-8f38-c28e6ee07728" class="numbered-list" start="1"><li>Definitions</li></ol><ol type="1" id="19cd68c6-a01e-800c-bdb1-f6b3317bde9d" class="numbered-list" start="2"><li>Acceptance and Amendments</li></ol><ol type="1" id="19cd68c6-a01e-802f-b23a-ebed31bfe9e4" class="numbered-list" start="3"><li>Service Contents and Changes</li></ol><ol type="1" id="19cd68c6-a01e-8026-b768-ec27192a5241" class="numbered-list" start="4"><li>Registration, Account Security, and Identity Verification</li></ol><ol type="1" id="19cd68c6-a01e-8029-b1e6-c8c9986940d8" class="numbered-list" start="5"><li>User Conduct and Obligations</li></ol><ol type="1" id="19cd68c6-a01e-8087-85bf-c1d2d61d0507" class="numbered-list" start="6"><li>Data Collection, Use, Storage, and Security</li></ol><ol type="1" id="19cd68c6-a01e-80c3-8e56-d96b3ebbd172" class="numbered-list" start="7"><li>Privacy Protection and User Rights</li></ol><ol type="1" id="19cd68c6-a01e-80a7-9923-c0e6285442e4" class="numbered-list" start="8"><li>Intellectual Property and User-Generated Content</li></ol><ol type="1" id="19cd68c6-a01e-8003-aef3-c9722bea711d" class="numbered-list" start="9"><li>Advertisements, Third-Party Content, and Links</li></ol><ol type="1" id="19cd68c6-a01e-80c3-bfe8-ddcd6dcc3288" class="numbered-list" start="10"><li>Fees and Payments (if applicable)</li></ol><ol type="1" id="19cd68c6-a01e-8001-bc0a-fcca601fbc58" class="numbered-list" start="11"><li>Disclaimer, Risk Assumption, and Limitation of Liability</li></ol><ol type="1" id="19cd68c6-a01e-8076-b671-e00087640dd0" class="numbered-list" start="12"><li>Data Transmission and Cross-Border Processing</li></ol><ol type="1" id="19cd68c6-a01e-80a4-884c-fd30f6c52616" class="numbered-list" start="13"><li>Notifications, Communications, and Customer Support</li></ol><ol type="1" id="19cd68c6-a01e-803c-94f8-e2934a753db3" class="numbered-list" start="14"><li>Dispute Resolution and Applicable Law</li></ol><ol type="1" id="19cd68c6-a01e-80a7-a671-ca756b4e5a6c" class="numbered-list" start="15"><li>Termination of the Agreement and Post-Termination Handling</li></ol><ol type="1" id="19cd68c6-a01e-80b8-b260-d50cc6d692a4" class="numbered-list" start="16"><li>Miscellaneous</li></ol><hr id="19cd68c6-a01e-8081-8c85-f0701783252e"/><h2 id="19cd68c6-a01e-801e-8152-e4ca5e7e06d3" class="">1. Definitions</h2><p id="19cd68c6-a01e-8003-a183-d2b8fb9f0faf" class="">1.1 <strong>The Application</strong>: Refers to the ConiWords app developed, maintained, and operated by the Developer, including versions for iOS, iPadOS, macOS, and any subsequent derivative products or services.</p><p id="19cd68c6-a01e-8009-b477-dbe50e1ee3b9" class="">1.2 <strong>User</strong>: Refers to any individual or legal entity that downloads, installs, and uses the Application through legitimate means and meets the qualifications set forth in this Agreement.</p><p id="19cd68c6-a01e-80c7-98ec-ca056a933413" class="">1.3 <strong>Services</strong>: Refers to all functions, content, data storage, transmission, analysis, and related support services provided by the Application to the User.</p><p id="19cd68c6-a01e-80f2-a248-fd434a3ca7b4" class="">1.4 <strong>User Data</strong>: Refers to all information generated, submitted, uploaded, or stored by the User in the course of using the Application, including but not limited to search records, preference settings, device information, logs, location data, and other personal information.</p><p id="19cd68c6-a01e-8096-bafc-ffe16059da53" class="">1.5 <strong>Privacy Policy</strong>: Refers to the document that, together with this Agreement, forms the framework for protecting user rights by detailing the collection, use, sharing, and security measures regarding data.</p><hr id="19cd68c6-a01e-8056-9018-d891cd89dc2c"/><h2 id="19cd68c6-a01e-8020-8078-f7c6f1034c49" class="">2. Acceptance and Amendments</h2><p id="19cd68c6-a01e-803c-a070-c095bbcc81af" class="">2.1 <strong>Acceptance of the Agreement</strong></p><p id="19cd68c6-a01e-80b9-8e1f-f8f07e4a211a" class="">By downloading, installing, registering, logging into, or otherwise using the Application, you are deemed to have read, understood, and agreed to all the terms and conditions set forth in this Agreement and the Privacy Policy.</p><p id="19cd68c6-a01e-8013-ae75-f15e5679e903" class="">2.2 <strong>Amendments and Updates</strong></p><ul id="19cd68c6-a01e-804a-af0e-c1d80deb6f27" class="bulleted-list"><li style="list-style-type:disc">We reserve the right to modify, supplement, or update any terms of this Agreement at any time, and such modifications will be communicated via announcements, emails, or in-app notifications.</li></ul><ul id="19cd68c6-a01e-80a0-8573-c8cffdc2ae6b" class="bulleted-list"><li style="list-style-type:disc">For modifications affecting important terms such as user privacy, data security, or payment, we will notify you at least 15 days in advance and provide detailed explanations before the amendments take effect.</li></ul><ul id="19cd68c6-a01e-80c4-9bd9-f586d08387aa" class="bulleted-list"><li style="list-style-type:disc">Your continued use of the Application after the amendments take effect will be deemed acceptance of the revised terms; if you disagree with any changes, please cease using the Application immediately.</li></ul><hr id="19cd68c6-a01e-8044-a363-e538ea78be64"/><h2 id="19cd68c6-a01e-8039-85b2-fc329ee6badc" class="">3. Service Contents and Changes</h2><p id="19cd68c6-a01e-8055-a815-c970ede270c1" class="">3.1 <strong>Service Contents</strong></p><ul id="19cd68c6-a01e-80d6-8456-fbf740c88fe5" class="bulleted-list"><li style="list-style-type:disc">The Application primarily provides functions such as word lookup, definition display, favorites management, study record storage, personalized recommendations, and AI-assisted queries.</li></ul><ul id="19cd68c6-a01e-8001-980b-cf67ecc8ddb3" class="bulleted-list"><li style="list-style-type:disc">We may continuously optimize, upgrade, or add new service features based on market demand or technological advancements, with related changes announced within the Application.</li></ul><p id="19cd68c6-a01e-803a-8078-e3161785f144" class="">3.2 <strong>Service Changes, Interruptions, and Termination</strong></p><ul id="19cd68c6-a01e-80a3-a0fb-e1af111a62a6" class="bulleted-list"><li style="list-style-type:disc">In the event of service interruptions due to technical maintenance, system upgrades, force majeure, or other reasons, we will promptly announce and restore services as conditions permit.</li></ul><ul id="19cd68c6-a01e-803b-ae0e-e97545866a86" class="bulleted-list"><li style="list-style-type:disc">We reserve the right to partially or entirely suspend, restrict, or terminate any service at any time without incurring any liability or compensation obligations.</li></ul><hr id="19cd68c6-a01e-80a7-bd8b-d376c8500149"/><h2 id="19cd68c6-a01e-80ae-adc8-f8aa42c8db53" class="">4. Registration, Account Security, and Identity Verification</h2><p id="19cd68c6-a01e-80f5-bcab-edb98fc75ce2" class="">4.1 <strong>Registration Requirements</strong></p><ul id="19cd68c6-a01e-8007-89e1-eeba348259d9" class="bulleted-list"><li style="list-style-type:disc">Certain features of the Application may require you to register an account. The registration information must be true, accurate, and complete.</li></ul><ul id="19cd68c6-a01e-80f3-b503-e39a7d4fa2de" class="bulleted-list"><li style="list-style-type:disc">You shall be solely responsible for any legal consequences arising from providing false information.</li></ul><p id="19cd68c6-a01e-80b3-8220-cb7ac58b122c" class="">4.2 <strong>Account Security</strong></p><ul id="19cd68c6-a01e-80e9-b659-d3b6be4124b7" class="bulleted-list"><li style="list-style-type:disc">You must properly safeguard your account and password, and must not disclose or transfer them to any third party; should any unusual activities be detected, you must notify us immediately.</li></ul><ul id="19cd68c6-a01e-8043-b875-c6d72105180c" class="bulleted-list"><li style="list-style-type:disc">Although we will provide necessary support in the event of security issues caused by your negligence, you will bear any related losses.</li></ul><p id="19cd68c6-a01e-80b7-84c5-db9fcd04e01c" class="">4.3 <strong>Identity Verification Measures</strong></p><ul id="19cd68c6-a01e-8049-a0f0-e0e0ed442dce" class="bulleted-list"><li style="list-style-type:disc">To enhance account security, we may implement multi-factor authentication or other verification measures.</li></ul><ul id="19cd68c6-a01e-8010-82b9-f4e48a05ae1c" class="bulleted-list"><li style="list-style-type:disc">You are required to follow the instructions to complete the necessary verifications to ensure the security of your account.</li></ul><hr id="19cd68c6-a01e-809b-818a-d20736797b0c"/><h2 id="19cd68c6-a01e-809f-900e-e47a67190de1" class="">5. User Conduct and Obligations</h2><p id="19cd68c6-a01e-8076-9962-ed62c2535606" class="">5.1 <strong>Lawful Use</strong></p><ul id="19cd68c6-a01e-80f3-8821-edd7c6330359" class="bulleted-list"><li style="list-style-type:disc">You agree to strictly abide by all applicable national laws and regulations, as well as this Agreement, when using the Application, and not to engage in any illegal, infringing, or disruptive activities.</li></ul><ul id="19cd68c6-a01e-808f-a01f-ea688466f3f6" class="bulleted-list"><li style="list-style-type:disc">You shall not use the Application to publish, transmit, or store content that is violent, pornographic, infringing, defamatory, discriminatory, or otherwise harmful or unlawful.</li></ul><p id="19cd68c6-a01e-80ed-be8e-e63f9198e84e" class="">5.2 <strong>Prohibited Conduct</strong></p><ul id="19cd68c6-a01e-80da-997b-ddd93ad3c7bc" class="bulleted-list"><li style="list-style-type:disc">The use of automated programs or other means to spam, harvest data, or disrupt the normal operation of the Application is prohibited.</li></ul><ul id="19cd68c6-a01e-80c6-8056-ca4013a20c22" class="bulleted-list"><li style="list-style-type:disc">You shall not use the Application for unauthorized commercial promotion, advertisements, or other profit-seeking activities.</li></ul><p id="19cd68c6-a01e-80f4-ad45-e0097e27756e" class="">5.3 <strong>Liability for Breaches</strong></p><ul id="19cd68c6-a01e-8079-9c4d-c2191c70ad20" class="bulleted-list"><li style="list-style-type:disc">You shall bear full responsibility for any legal liabilities or losses arising from your actions (including but not limited to illegal operations, misuse of services, or disclosure of account information).</li></ul><ul id="19cd68c6-a01e-8094-b93a-de3815aa55a2" class="bulleted-list"><li style="list-style-type:disc">We reserve the right to immediately take measures such as restricting, suspending, or terminating your access if any violation is detected, and to pursue any applicable legal remedies.</li></ul><hr id="19cd68c6-a01e-8078-b773-e1a6bc5e8486"/><h2 id="19cd68c6-a01e-801a-89af-c849275d854f" class="">6. Data Collection, Use, Storage, and Security</h2><p id="19cd68c6-a01e-80cc-b97f-eb43a04db707" class="">6.1 <strong>Data Collection Principles</strong></p><ul id="19cd68c6-a01e-80f0-8d59-c5e695ffd01e" class="bulleted-list"><li style="list-style-type:disc">In order to provide, improve, and personalize our services, we only collect information necessary to achieve the functionality of the service. However, you understand and agree that we may collect data beyond the bare minimum requirements for market analysis and product optimization.</li></ul><ul id="19cd68c6-a01e-80c9-aa91-f8d4f9e55513" class="bulleted-list"><li style="list-style-type:disc">Prior to data collection, we will clearly inform you of the types, purposes, retention period, and scope of the data being collected. Notwithstanding, for certain commercial data processing purposes, we reserve the right to use the data without obtaining additional consent.</li></ul><p id="19cd68c6-a01e-80ea-bd74-e625716b3c56" class="">6.2 <strong>Scope of Data Use</strong></p><ul id="19cd68c6-a01e-804c-a82a-c5a240e2ad9b" class="bulleted-list"><li style="list-style-type:disc">User data is primarily used for enabling service functions, troubleshooting, statistical analysis, and product improvement.</li></ul><ul id="19cd68c6-a01e-800a-94a3-e14b31a0c515" class="bulleted-list"><li style="list-style-type:disc">We reserve the right, within the bounds of the law, to use your data for marketing, partner analysis, and other commercial purposes, and you acknowledge and agree to such use even if it exceeds your initial expectations.</li></ul><p id="19cd68c6-a01e-80b9-80db-ca21ee531533" class="">6.3 <strong>Data Storage and Retention</strong></p><ul id="19cd68c6-a01e-80e9-b037-d9c296f88d05" class="bulleted-list"><li style="list-style-type:disc">We will adopt industry-standard security measures to store, backup, and encrypt user data.</li></ul><ul id="19cd68c6-a01e-801b-8fc1-ffc9c80b8d30" class="bulleted-list"><li style="list-style-type:disc">The retention period for user data is limited to the time necessary to achieve the service functions; after this period, we reserve the right to anonymize or delete the data. However, for certain business needs, data may be retained for internal analysis.</li></ul><p id="19cd68c6-a01e-80b1-9c9d-cb4ea2055ad2" class="">6.4 <strong>Data Security Measures</strong></p><ul id="19cd68c6-a01e-8067-b7b3-d3fa1bba3e98" class="bulleted-list"><li style="list-style-type:disc">We will continuously update and optimize our data protection mechanisms, including but not limited to network security defenses, access management, vulnerability patching, and emergency response.</li></ul><ul id="19cd68c6-a01e-8028-ae43-e37dbc785cce" class="bulleted-list"><li style="list-style-type:disc">Although we strive to protect your data, you acknowledge that due to inherent network risks and technological limitations, unforeseen risks may occur for which we will not assume liability beyond what is required by law.</li></ul><hr id="19cd68c6-a01e-8049-a723-eee0179596fc"/><h2 id="19cd68c6-a01e-806e-94b3-c23ee797234e" class="">7. Privacy Protection and User Rights</h2><p id="19cd68c6-a01e-8062-ac52-d193663fd781" class="">7.1 <strong>Commitment to Privacy Protection</strong></p><ul id="19cd68c6-a01e-80f9-9300-fef338a259b3" class="bulleted-list"><li style="list-style-type:disc">We are committed to processing your personal information in accordance with applicable laws, regulations, and this Privacy Policy. However, we reserve the right to use certain data for commercial purposes as long as such use does not violate fundamental legal requirements.</li></ul><ul id="19cd68c6-a01e-803c-839c-da5f9f10a2d1" class="bulleted-list"><li style="list-style-type:disc">Except as otherwise required by law or with your explicit consent, we will not disclose or leak your personal information. Notwithstanding, for internal data analysis, business optimization, and sharing with partners, no separate notice will be provided.</li></ul><p id="19cd68c6-a01e-8097-b48b-f0b583a96cc6" class="">7.2 <strong>User Rights</strong></p><p id="19cd68c6-a01e-80a9-b476-fe523b9a022d" class="">You have the following rights regarding the processing of your data, although some rights may be subject to limitations in the interest of business continuity and internal analysis:</p><ul id="19cd68c6-a01e-8023-9146-d9456a0cd224" class="bulleted-list"><li style="list-style-type:disc"><strong>Right of Access</strong>: You have the right to inquire about all the personal data we have collected about you; however, detailed itemized information may not be available for aggregated analytical data.</li></ul><ul id="19cd68c6-a01e-8048-b6dc-f5e476a39bd3" class="bulleted-list"><li style="list-style-type:disc"><strong>Right to Rectification</strong>: If you find that any data is inaccurate, you may request corrections; however, we reserve the right to delay processing such requests for data already used in internal analysis.</li></ul><ul id="19cd68c6-a01e-8016-ac27-f73fcd4544a4" class="bulleted-list"><li style="list-style-type:disc"><strong>Right to Deletion</strong>: Under conditions that meet legal requirements and service necessity, you may request deletion of your personal data; however, for certain statistical data or anonymized information, such requests may not be fully accommodated.</li></ul><ul id="19cd68c6-a01e-80f0-93cc-c371cb8ec4b0" class="bulleted-list"><li style="list-style-type:disc"><strong>Right to Restrict Processing</strong>: Under certain circumstances, you may request restrictions on the processing of your personal data.</li></ul><ul id="19cd68c6-a01e-808e-a777-db4f56261fa3" class="bulleted-list"><li style="list-style-type:disc"><strong>Right to Data Portability</strong>: You have the right to receive your personal data in a structured, commonly used, and machine-readable format, though this right may be limited to the specific service functions.</li></ul><ul id="19cd68c6-a01e-805f-8f04-eb1cc2fcaca1" class="bulleted-list"><li style="list-style-type:disc"><strong>Right to Withdraw Consent</strong>: You may withdraw your consent for data processing at any time; however, withdrawal may affect the normal use of some services, and it does not affect the legality of data processing conducted prior to the withdrawal.</li></ul><p id="19cd68c6-a01e-80a1-854c-c42dae9a1d6f" class="">7.3 <strong>Supplementary Provisions to the Privacy Policy</strong></p><ul id="19cd68c6-a01e-806e-a465-ec480c49eb57" class="bulleted-list"><li style="list-style-type:disc">The Privacy Policy, together with this Agreement, forms the basis of the rights and obligations between the parties.</li></ul><ul id="19cd68c6-a01e-8024-b8cb-cefa29bece83" class="bulleted-list"><li style="list-style-type:disc">In the event of updates to the Privacy Policy, we will notify you via the Application or email, although notifications regarding changes in certain data processing practices for business purposes may be subject to slight delays.</li></ul><hr id="19cd68c6-a01e-8015-81f6-eb830f214c34"/><h2 id="19cd68c6-a01e-80ce-b636-f0f4703f0fa2" class="">8. Intellectual Property and User-Generated Content</h2><p id="19cd68c6-a01e-80e8-a573-ef20cc4ff334" class="">8.1 <strong>Intellectual Property Protection</strong></p><ul id="19cd68c6-a01e-80ec-842e-e959827a216d" class="bulleted-list"><li style="list-style-type:disc">All content within the Application (including text, images, icons, software, source code, technology, interface designs, documents, etc.) is protected by applicable intellectual property laws.</li></ul><ul id="19cd68c6-a01e-80ee-a0a0-c28bdcf6a9f5" class="bulleted-list"><li style="list-style-type:disc">Unless expressly authorized in writing by the Developer, users shall not copy, modify, disseminate, or use any content for commercial purposes.</li></ul><p id="19cd68c6-a01e-80d1-9001-c1ac54316f92" class="">8.2 <strong>User-Generated Content (UGC)</strong></p><ul id="19cd68c6-a01e-80b1-af01-f6c4295e0222" class="bulleted-list"><li style="list-style-type:disc">Any content you upload, publish, or store within the Application remains your intellectual property; however, you grant the Developer a worldwide, royalty-free, non-exclusive, perpetual license to use, copy, modify, edit, distribute, and display such content.</li></ul><ul id="19cd68c6-a01e-80ad-89d2-fb38f6e74351" class="bulleted-list"><li style="list-style-type:disc">You must ensure that any uploaded content does not infringe upon the rights of third parties, and you will bear full responsibility for any infringement claims.</li></ul><p id="19cd68c6-a01e-80f2-a091-e5ada550e8f9" class="">8.3 <strong>Feedback and Suggestions</strong></p><ul id="19cd68c6-a01e-8008-baf4-c88be93b77c3" class="bulleted-list"><li style="list-style-type:disc">Any feedback, suggestions, or creative ideas submitted by you will be deemed an unconditional license to the Developer. Unless otherwise agreed in writing, the Developer has the right to use and commercialize such submissions without compensation while respecting attribution where applicable.</li></ul><hr id="19cd68c6-a01e-80c0-ae70-f2e6a2930647"/><h2 id="19cd68c6-a01e-80f9-8a2b-e130d0742ea7" class="">9. Advertisements, Third-Party Content, and Links</h2><p id="19cd68c6-a01e-803c-8d18-eb6d72bfa3dd" class="">9.1 <strong>Advertisement Display</strong></p><ul id="19cd68c6-a01e-8073-a9ae-c85f085a8df8" class="bulleted-list"><li style="list-style-type:disc">The Application may display advertisements or promotional content provided by third parties, which do not necessarily reflect the views of the Developer.</li></ul><ul id="19cd68c6-a01e-8057-a444-fcf3aab3fd2b" class="bulleted-list"><li style="list-style-type:disc">We assume no responsibility for the accuracy, legality, or completeness of any third-party advertisement content.</li></ul><p id="19cd68c6-a01e-80dc-9692-cc440f6fefba" class="">9.2 <strong>Third-Party Links</strong></p><ul id="19cd68c6-a01e-80fc-9456-faa2260010f6" class="bulleted-list"><li style="list-style-type:disc">The Application may include links to third-party websites or services.</li></ul><ul id="19cd68c6-a01e-806b-83fc-f75a15689a7c" class="bulleted-list"><li style="list-style-type:disc">We are not responsible for the content, privacy policies, or terms of service of any third-party platforms; users are advised to review any such statements carefully.</li></ul><hr id="19cd68c6-a01e-80b3-9c6a-e7455231f455"/><h2 id="19cd68c6-a01e-803e-b2c7-c7f0cac117f1" class="">10. Fees and Payments (if applicable)</h2><p id="19cd68c6-a01e-805a-ba3c-c63d235919a4" class="">10.1 <strong>Free Services and Paid Features</strong></p><ul id="19cd68c6-a01e-80f4-a029-e55abe250734" class="bulleted-list"><li style="list-style-type:disc">The Application offers basic services for free while also providing additional paid features or subscription models.</li></ul><ul id="19cd68c6-a01e-80ff-95c5-eb264b024179" class="bulleted-list"><li style="list-style-type:disc">The specific content, pricing, payment methods, and refund policies for paid services shall be provided via in-app announcements or separate agreements.</li></ul><p id="19cd68c6-a01e-8021-a98f-e4edfd76c62a" class="">10.2 <strong>Payments and Refunds</strong></p><ul id="19cd68c6-a01e-8071-9c36-f3813697e404" class="bulleted-list"><li style="list-style-type:disc">All payments are processed through third-party payment platforms. You should carefully read and agree to the service terms of such platforms before making any payment.</li></ul><ul id="19cd68c6-a01e-80de-8ebc-d36f2ade512f" class="bulleted-list"><li style="list-style-type:disc">Except as required by law or due to issues with service quality, once payment is confirmed, no unilateral refund shall be granted without the Developer’s consent.</li></ul><hr id="19cd68c6-a01e-801e-a0a2-c06e053e550a"/><h2 id="19cd68c6-a01e-800a-a620-f2b1d8b9c59e" class="">11. Disclaimer, Risk Assumption, and Limitation of Liability</h2><p id="19cd68c6-a01e-8094-8b2f-eea66a756737" class="">11.1 <strong>Disclaimer</strong></p><ul id="19cd68c6-a01e-8063-a6d2-fd34a768c127" class="bulleted-list"><li style="list-style-type:disc">The Application, along with its content and services, is provided on an “as is” basis without any express or implied warranties regarding its suitability, accuracy, or security.</li></ul><ul id="19cd68c6-a01e-8016-90d2-fc9b1e6bed86" class="bulleted-list"><li style="list-style-type:disc">We shall not be liable for any risks arising from network issues, system failures, or other force majeure events beyond what is required by law.</li></ul><p id="19cd68c6-a01e-80b5-a855-d7acc881094f" class="">11.2 <strong>Risk Assumption</strong></p><ul id="19cd68c6-a01e-80cf-9980-c8e1d2d41306" class="bulleted-list"><li style="list-style-type:disc">You expressly acknowledge and accept that using the Application may involve risks such as data loss, service interruptions, delays in information delivery, and other unforeseen issues.</li></ul><ul id="19cd68c6-a01e-80bb-8d42-d9123812de49" class="bulleted-list"><li style="list-style-type:disc">It is your responsibility to take necessary security measures to prevent losses resulting from personal negligence.</li></ul><p id="19cd68c6-a01e-80e1-a1b7-dd022c8fe9f7" class="">11.3 <strong>Limitation of Liability</strong></p><ul id="19cd68c6-a01e-808e-af46-f7560d39c8b0" class="bulleted-list"><li style="list-style-type:disc">To the extent permitted by applicable law, the cumulative liability of the Developer and its affiliates for any direct or indirect losses arising from the use of the Application shall not exceed the amount actually paid by you for the service (if applicable).</li></ul><hr id="19cd68c6-a01e-8016-9430-c312aa0424f7"/><h2 id="19cd68c6-a01e-8008-a79f-d931cdad274f" class="">12. Data Transmission and Cross-Border Processing</h2><p id="19cd68c6-a01e-803c-b194-d42a094c9cd4" class="">12.1 <strong>Data Transmission</strong></p><ul id="19cd68c6-a01e-804e-87b9-e9b7778b14bc" class="bulleted-list"><li style="list-style-type:disc">In order to provide global services, the Application may transfer your data to other countries or regions in accordance with applicable legal requirements.</li></ul><ul id="19cd68c6-a01e-807b-a9bd-f7d5b68636b5" class="bulleted-list"><li style="list-style-type:disc">You consent and authorize your personal data to be processed in accordance with local laws in the recipient country.</li></ul><p id="19cd68c6-a01e-809a-b4e1-c4cbd5cc41e7" class="">12.2 <strong>Cross-Border Data Protection</strong></p><ul id="19cd68c6-a01e-80b2-9255-d32a72a470f5" class="bulleted-list"><li style="list-style-type:disc">We will implement necessary technical and managerial measures to ensure the security and privacy of your data during cross-border transmission and, where necessary, enter into data protection agreements with third parties.</li></ul><hr id="19cd68c6-a01e-8017-8d05-d2b4d444f5af"/><h2 id="19cd68c6-a01e-80f2-87a9-f727f04f74bd" class="">13. Notifications, Communications, and Customer Support</h2><p id="19cd68c6-a01e-80c5-933d-fc73b2e48ed9" class="">13.1 <strong>Notification Methods</strong></p><ul id="19cd68c6-a01e-80fb-b231-f324f97d122a" class="bulleted-list"><li style="list-style-type:disc">Any notifications, announcements, or changes related to this Agreement will be communicated through in-app announcements, emails, SMS, or other appropriate methods.</li></ul><ul id="19cd68c6-a01e-80e0-9376-f99be959c498" class="bulleted-list"><li style="list-style-type:disc">You are responsible for keeping your contact information (e.g., email address, phone number) up to date.</li></ul><p id="19cd68c6-a01e-8004-8dd4-d796a58179fe" class="">13.2 <strong>Customer Support</strong></p><ul id="19cd68c6-a01e-80ce-a585-dbe0261a044e" class="bulleted-list"><li style="list-style-type:disc">We provide dedicated customer support channels to address user inquiries, complaints, and technical issues.</li></ul><ul id="19cd68c6-a01e-804e-a8b1-db1ea2ad7166" class="bulleted-list"><li style="list-style-type:disc">For assistance, please contact us via:<ul id="19cd68c6-a01e-807e-b396-f007fa430f46" class="bulleted-list"><li style="list-style-type:circle">Email: <a href="mailto:support@coniwords.com">p</a>ublic@services.annopia.com</li></ul><ul id="19cd68c6-a01e-8041-ad48-c0371e79646b" class="bulleted-list"><li style="list-style-type:circle">Official Website or in-app feedback portal</li></ul></li></ul><hr id="19cd68c6-a01e-8062-851d-c00435bb5264"/><h2 id="19cd68c6-a01e-802a-8e85-cccf0f478902" class="">14. Dispute Resolution and Applicable Law</h2><p id="19cd68c6-a01e-8059-aaed-eccbacd55a8f" class="">14.1 <strong>Applicable Law</strong></p><ul id="19cd68c6-a01e-80a6-bf19-f2b958b33c3d" class="bulleted-list"><li style="list-style-type:disc">The formation, performance, interpretation, and dispute resolution of this Agreement shall be governed by the relevant laws of the People’s Republic of China.</li></ul><ul id="19cd68c6-a01e-80c0-b4e0-f2d51857a5ef" class="bulleted-list"><li style="list-style-type:disc">In the event that any provision of this Agreement conflicts with current laws and regulations, the legal provisions shall prevail.</li></ul><p id="19cd68c6-a01e-8058-9e71-df3acdf5bffa" class="">14.2 <strong>Dispute Resolution</strong></p><ul id="19cd68c6-a01e-803f-aeb7-e3eaecd310bf" class="bulleted-list"><li style="list-style-type:disc">Any disputes arising from or related to this Agreement shall first be resolved through friendly negotiations between the parties.</li></ul><ul id="19cd68c6-a01e-801b-bc48-f7989a41c797" class="bulleted-list"><li style="list-style-type:disc">If negotiation fails, you agree to submit the dispute to the court with jurisdiction in the Developer’s location.</li></ul><ul id="19cd68c6-a01e-80b6-a373-e8c5db3bb973" class="bulleted-list"><li style="list-style-type:disc">You expressly waive the right to initiate any class action; all disputes must be brought by individual users.</li></ul><hr id="19cd68c6-a01e-808a-ab37-cbb67f5888d6"/><h2 id="19cd68c6-a01e-8043-859d-fdac79531e13" class="">15. Termination of the Agreement and Post-Termination Handling</h2><p id="19cd68c6-a01e-806f-adb3-c46b0d2c45ff" class="">15.1 <strong>User-Initiated Termination</strong></p><ul id="19cd68c6-a01e-8025-94fe-e3d97410451c" class="bulleted-list"><li style="list-style-type:disc">You may cease using the Application at any time; however, termination does not relieve you of any legal responsibilities incurred during the term of the Agreement.</li></ul><ul id="19cd68c6-a01e-80ff-a308-dcb83dce33f9" class="bulleted-list"><li style="list-style-type:disc">Requests for account cancellation or data deletion shall be processed in accordance with the procedures outlined in the Privacy Policy; however, some historical data may be retained or anonymized for statistical or compliance purposes.</li></ul><p id="19cd68c6-a01e-80bf-92d7-ce9b2675a106" class="">15.2 <strong>Developer-Initiated Termination</strong></p><ul id="19cd68c6-a01e-8040-845d-fdf73ba79d8e" class="bulleted-list"><li style="list-style-type:disc">We reserve the right to unilaterally terminate or suspend any or all services at any time without prior notice or compensation.</li></ul><ul id="19cd68c6-a01e-80c7-a316-c66389bd49fa" class="bulleted-list"><li style="list-style-type:disc">We will not be liable for any losses resulting from the termination of services, though we will endeavor to provide support for data export where feasible.</li></ul><p id="19cd68c6-a01e-807f-ada8-ef2e9230c704" class="">15.3 <strong>Post-Termination Data Handling</strong></p><ul id="19cd68c6-a01e-809c-947b-d11bec5676f6" class="bulleted-list"><li style="list-style-type:disc">Upon termination of the Agreement, all privileges associated with your account will immediately cease.</li></ul><ul id="19cd68c6-a01e-807c-bb64-c7998fd1623f" class="bulleted-list"><li style="list-style-type:disc">User data will be handled in accordance with the retention period specified in the Privacy Policy; data beyond that period may be deleted or anonymized.</li></ul><hr id="19cd68c6-a01e-803c-ae45-f1e4a313d986"/><h2 id="19cd68c6-a01e-8024-a41e-f4b89b1a0609" class="">16. Miscellaneous</h2><p id="19cd68c6-a01e-8055-9c7a-cbf7d3bee7b2" class="">16.1 <strong>Entire Agreement</strong></p><ul id="19cd68c6-a01e-80d7-90c4-e08107e9a05f" class="bulleted-list"><li style="list-style-type:disc">This Agreement (including the Privacy Policy and any supplemental provisions) constitutes the entire agreement between you and the Developer regarding your use of the Application, superseding all prior oral or written communications.</li></ul><p id="19cd68c6-a01e-807c-9252-d2d90694fc38" class="">16.2 <strong>Severability</strong></p><ul id="19cd68c6-a01e-80fc-8ed1-edc3128ab785" class="bulleted-list"><li style="list-style-type:disc">If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect, and the invalid portion shall not affect the validity of the rest.</li></ul><p id="19cd68c6-a01e-8068-865f-c4a6995bee48" class="">16.3 <strong>Reservation of Rights</strong></p><ul id="19cd68c6-a01e-80d5-908f-f7040e4d9d5b" class="bulleted-list"><li style="list-style-type:disc">The Developer’s failure to enforce any provision of this Agreement or any delay in doing so shall not be construed as a waiver of such rights.</li></ul><p id="19cd68c6-a01e-80f9-bcb5-fbec99af7a96" class="">16.4 <strong>Language Version</strong></p><ul id="19cd68c6-a01e-80ec-b2ba-c19dccf59e12" class="bulleted-list"><li style="list-style-type:disc">This Agreement is in English. In the event of discrepancies between translations, this version ( EN ) shall prevail.</li></ul><p id="19cd68c6-a01e-8097-a7b3-f484e46536a4" class="">16.5 <strong>Additional Provisions</strong></p><ul id="19cd68c6-a01e-8043-aba1-fa1beb6c732b" class="bulleted-list"><li style="list-style-type:disc">For any matters not covered in this Agreement or in the event of any disputes, the Developer may formulate supplementary provisions which shall have the same legal effect as this Agreement.</li></ul><hr id="19cd68c6-a01e-80b2-9429-fc1cd66f928b"/><p id="19cd68c6-a01e-806d-a738-fa70f49b6d0c" class="">All Rights Reserved, 2025©Annopia</p><p id="19cd68c6-a01e-80eb-aada-c992f7249726" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
