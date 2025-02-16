@@ -1,0 +1,688 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>ConiWords-CN</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="19cd68c6-a01e-8042-a4e9-c93efc561943" class="page sans"><header><h1 class="page-title">ConiWords-CN</h1><p class="page-description"></p></header><div class="page-body"><h2 id="19cd68c6-a01e-80ee-a3ef-eab27915ce88" class=""><strong>ConiWords 用户协议</strong></h2><p id="19cd68c6-a01e-80e0-beeb-c6944c94e1ba" class="">
+</p><p id="19cd68c6-a01e-8098-9ca1-e973682242f2" class=""><strong>版本号：2025-02-16</strong></p><p id="19cd68c6-a01e-8057-ab2f-e2f3d74827b0" class=""><strong>生效日期：2025年2月4日</strong></p><p id="19cd68c6-a01e-80d5-9a9e-c01319a00845" class="">
+</p><p id="19cd68c6-a01e-8031-94db-ec9914cd9193" class=""><strong>目录</strong></p><p id="19cd68c6-a01e-80dd-8a61-f9e870700af6" class="">1.	定义</p><p id="19cd68c6-a01e-8034-b84d-fc7fdb44b598" class="">2.	协议的接受与修订</p><p id="19cd68c6-a01e-8053-b136-cb2ce4846b39" class="">3.	服务内容及变更</p><p id="19cd68c6-a01e-80be-a520-d239be1de162" class="">4.	用户注册、账户安全与身份验证</p><p id="19cd68c6-a01e-809f-9407-fa442255a822" class="">5.	用户行为及义务</p><p id="19cd68c6-a01e-801b-97ea-ed975a65717f" class="">6.	数据收集、使用、存储与安全</p><p id="19cd68c6-a01e-8073-aee0-d4fcd5e98f7f" class="">7.	隐私保护及用户权利</p><p id="19cd68c6-a01e-8083-b90b-e0ce94f55def" class="">8.	知识产权及用户生成内容</p><p id="19cd68c6-a01e-8059-bd57-deb2c56f8684" class="">9.	广告、第三方内容与链接</p><p id="19cd68c6-a01e-808f-9cb6-f145ca4d11ec" class="">10.	费用与支付（如适用）</p><p id="19cd68c6-a01e-806c-b6be-dce7ca475791" class="">11.	免责声明、风险承担及责任限制</p><p id="19cd68c6-a01e-8035-803d-e6769d7aeacc" class="">12.	数据传输与跨境处理</p><p id="19cd68c6-a01e-80c4-ac88-ef376711ed92" class="">13.	通知、通讯及客户支持</p><p id="19cd68c6-a01e-80af-8fca-f5a976c1d431" class="">14.	争议解决与适用法律</p><p id="19cd68c6-a01e-80c8-b7d1-e04a952d27d5" class="">15.	协议的终止与后续处理</p><p id="19cd68c6-a01e-8082-9dcd-c99f180c9fdb" class="">16.	附则</p><p id="19cd68c6-a01e-800b-812b-d24a3478a532" class="">
+</p><p id="19cd68c6-a01e-8027-a233-f85d90d817ab" class=""><strong>1. 定义</strong></p><p id="19cd68c6-a01e-80c7-a540-e5b34182a3b7" class="">1.1 <strong>本应用</strong>：指由开发者开发、维护并运营的 ConiWords（这包括了ConiWords1, 2等添加了产品号的产品） 应用程序，包括适用于 iOS、iPadOS 与 macOS 等平台的版本，以及后续推出的衍生产品或服务。</p><p id="19cd68c6-a01e-80d6-84df-ffb690a1fff8" class="">1.2 <strong>用户</strong>：指通过合法途径下载、安装及使用本应用的个人或法人，且符合本协议规定的资格。</p><p id="19cd68c6-a01e-80e6-aaf5-cec0f32a85c1" class="">1.3 <strong>服务</strong>：指本应用向用户提供的所有功能、内容、数据存储、传输、分析与相关支持服务。</p><p id="19cd68c6-a01e-80f4-8f8b-e51b6b4ee567" class="">1.4 <strong>用户数据</strong>：指用户在使用本应用过程中产生、提交、上传或存储的所有信息，包括但不限于查询记录、偏好设置、设备信息、操作日志、位置信息及其他个人信息。</p><p id="19cd68c6-a01e-808a-9d35-ec61eca05dce" class="">1.5 <strong>隐私政策</strong>：指与本协议共同构成用户权益保护框架的文件，详细说明数据收集、使用、共享及安全措施。</p><p id="19cd68c6-a01e-8043-b487-e4f269749141" class=""><strong>2. 协议的接受与修订</strong></p><p id="19cd68c6-a01e-80a0-9d6d-d5338666bf5a" class="">2.1 <strong>协议的接受</strong></p><p id="19cd68c6-a01e-800d-9b30-e7fbf618d0ba" class="">您下载、安装、注册、登录或以任何方式使用本应用，即视为您已经充分阅读、理解并同意接受本协议及隐私政策中的所有条款。</p><p id="19cd68c6-a01e-808d-be85-d8ae93434787" class="">2.2 <strong>修订与更新</strong></p><p id="19cd68c6-a01e-808c-bb02-eaf725dfa20d" class="">•	我们保留随时修改、补充或更新本协议条款的权利，修改将以公告、邮件或应用内通知等方式向您传达。</p><p id="19cd68c6-a01e-8080-b86b-f976617ed3f8" class="">•	对于涉及用户隐私、数据安全、费用支付等重要条款的修改，我们将至少提前15日通知，并在修改生效前提供详细说明。</p><p id="19cd68c6-a01e-805f-bffc-c7e6b77363e2" class="">•	您在修改生效后继续使用本应用，将被视为接受经修订后的条款；如您不同意修订内容，应立即停止使用本应用。</p><p id="19cd68c6-a01e-80d3-84de-c9c4cf51af08" class=""><strong>3. 服务内容及变更</strong></p><p id="19cd68c6-a01e-8013-b223-c1d4c8673d8d" class="">3.1 <strong>服务内容</strong></p><p id="19cd68c6-a01e-80e4-b8c8-f1007b19a9fb" class="">•	本应用主要提供单词查询、定义展示、收藏管理、学习记录保存、个性化推荐及人工智能辅助查询等功能。</p><p id="19cd68c6-a01e-80eb-93fa-eb3d5b290624" class="">•	我们可能基于市场需求或技术进步，不断优化、升级或新增服务功能，相关变更将在应用内公告。</p><p id="19cd68c6-a01e-803e-9e68-f2d7ae2531ce" class="">3.2 <strong>服务变更、中断与终止</strong></p><p id="19cd68c6-a01e-8067-8c73-d5aef418a6da" class="">•	因技术维护、系统升级、不可抗力或其他原因导致的服务中断，我们将尽快公告并在条件允许时恢复服务。</p><p id="19cd68c6-a01e-809c-9ae6-ec65e9255ad4" class="">•	我们保留在任何时间部分或全部暂停、限制或终止某项服务的权利，且无需为此承担任何责任或进行赔偿。</p><p id="19cd68c6-a01e-8048-81dc-d66da1fb5e05" class=""><strong>4. 用户注册、账户安全与身份验证</strong></p><p id="19cd68c6-a01e-80c2-88d2-e6c42a651593" class="">4.1 <strong>注册要求</strong></p><p id="19cd68c6-a01e-804f-aa14-cf144f777e0b" class="">•	用户在使用部分功能前可能需要注册账户，注册信息应真实、准确、完整。</p><p id="19cd68c6-a01e-804f-88ae-f7b5c271444a" class="">•	如因提供虚假信息导致的任何法律后果，由用户自行承担。</p><p id="19cd68c6-a01e-8008-a7e5-cdf1ccb2779c" class="">4.2 <strong>账户安全</strong></p><p id="19cd68c6-a01e-800d-907a-d57e737d1e9c" class="">•	用户须妥善保管账户及密码，不得泄露或转让给第三方；一旦发现异常活动，应立即通知我们。</p><p id="19cd68c6-a01e-80f6-afe5-cf00f96e464e" class="">•	对于因用户疏忽造成的账户安全问题，尽管我们提供必要支持，但相关损失仍由用户自行承担。</p><p id="19cd68c6-a01e-80fc-bbcb-cf7bfd1243c3" class="">4.3 <strong>身份验证措施</strong></p><p id="19cd68c6-a01e-80ab-a2b6-c4c841affa2c" class="">•	为提高账户安全性，我们可能引入多因素身份验证或其他安全验证手段。</p><p id="19cd68c6-a01e-804a-9669-e00d92e35b91" class="">•	用户应按照指引完成相应验证，确保账户安全。</p><p id="19cd68c6-a01e-8073-a5c5-da92e0965e83" class=""><strong>5. 用户行为及义务</strong></p><p id="19cd68c6-a01e-8099-a892-d6e565dd9eda" class="">5.1 <strong>合法使用</strong></p><p id="19cd68c6-a01e-8005-8d88-d3a80bc11576" class="">•	用户承诺在使用本应用过程中严格遵守国家法律法规及本协议规定，不得利用本应用从事任何违法、侵权或扰乱正常运营的活动。</p><p id="19cd68c6-a01e-8021-810e-f9080c6bab6c" class="">•	用户不得利用本应用发布、传播、储存含有暴力、色情、侵权、诽谤、歧视或其他违法有害信息的内容。</p><p id="19cd68c6-a01e-80f3-bc24-fa359db14a85" class="">5.2 <strong>禁止行为</strong></p><p id="19cd68c6-a01e-8017-b2b2-d7885e6273a5" class="">•	禁止通过自动化程序或其他手段恶意刷屏、抓取数据或干扰应用正常运作。</p><p id="19cd68c6-a01e-80f7-aac8-fcdd3718e37a" class="">•	用户不得将本应用用于未经授权的商业推广、广告或其他营利活动。</p><p id="19cd68c6-a01e-804b-8dc8-d785bd74f2b0" class="">5.3 <strong>责任承担</strong></p><p id="19cd68c6-a01e-80dd-935c-f6975c6621a6" class="">•	对于因用户自身行为（包括但不限于违法操作、滥用服务、泄露账户信息等）引发的法律责任或损失，用户应独立承担全部责任。</p><p id="19cd68c6-a01e-8001-b7ba-c8870c726bb7" class="">•	我们有权在发现用户违规行为时，立即采取限制、暂停或终止服务的措施，并保留追究相关法律责任的权利。</p><p id="19cd68c6-a01e-80ca-b19b-eba02d9de043" class=""><strong>6. 数据收集、使用、存储与安全</strong></p><p id="19cd68c6-a01e-808d-92d4-d2b9f417b01e" class="">6.1 <strong>数据收集原则</strong></p><p id="19cd68c6-a01e-8086-bb65-ca7ce3e5f5f7" class="">•	为向您提供、改进和个性化服务，我们仅收集实现服务功能所必需的信息。但您理解并同意，我们在收集数据时可能会超出最基本服务需求的范围，以便进行市场分析和产品优化。</p><p id="19cd68c6-a01e-80d8-9973-dda03c5b243b" class="">•	在数据收集前，我们将以明确方式告知您收集数据的种类、用途、存储期限及使用范围，但对于部分商业用途的数据处理，我们保留在不另行获得额外授权的情况下使用数据的权利。</p><p id="19cd68c6-a01e-8031-9f83-ed1fbe4dfca7" class="">6.2 <strong>数据使用范围</strong></p><p id="19cd68c6-a01e-8039-8f16-d06a52ddcda7" class="">•	用户数据主要用于实现服务功能、故障诊断、统计分析及产品改进。</p><p id="19cd68c6-a01e-8047-b7c6-e059aaf62f34" class="">•	我们保留在法律允许范围内，将用户数据用于市场推广、合作伙伴分析及其他商业用途的权利，用户对此应予以理解并予以配合，即使此类用途超出您最初的预期。</p><p id="19cd68c6-a01e-80b0-91a1-fc72eb4ce43f" class="">6.3 <strong>数据存储与保留</strong></p><p id="19cd68c6-a01e-804f-b803-c3b188d9b301" class="">•	我们将采用符合行业标准的安全措施对用户数据进行存储、备份和加密。</p><p id="19cd68c6-a01e-802d-9bc4-cce674a72897" class="">•	用户数据的保留期限为实现服务功能所必需的时间，超出该期限后，我们有权对数据进行匿名化处理或删除，但在部分业务需要下，可能保留数据用于内部分析。</p><p id="19cd68c6-a01e-80ac-a898-fe98c7338a6b" class="">6.4 <strong>数据安全措施</strong></p><p id="19cd68c6-a01e-80aa-b650-e7d7c4369f26" class="">•	我们将持续更新和优化数据保护机制，包括但不限于网络安全防护、权限管理、漏洞修复及应急响应。</p><p id="19cd68c6-a01e-80a7-8a8b-f9a216478838" class="">•	尽管我们力求保护您的数据安全，但您理解因网络风险和技术限制而产生的不可预见风险，我们不承担法律规定以外的全部责任。</p><p id="19cd68c6-a01e-8048-99e7-c78481c8d3a1" class=""><strong>7. 隐私保护及用户权利</strong></p><p id="19cd68c6-a01e-80b9-baf7-dbca7f23de79" class="">7.1 <strong>隐私保护承诺</strong></p><p id="19cd68c6-a01e-8096-8d23-cee60ad382cf" class="">•	我们承诺按照适用法律法规及本隐私政策处理您的个人信息，但同时保留在不违反法律基本要求的前提下，将部分数据用于商业目的的权利。</p><p id="19cd68c6-a01e-8071-bedc-d4024c966bb1" class="">•	除非法律另有规定或经过用户明确授权，我们不会公开或泄露您的个人信息；但对于内部数据分析、业务优化及合作伙伴共享，我们无需单独通知。</p><p id="19cd68c6-a01e-804d-bc25-f996cf6d562f" class="">7.2 <strong>用户权利</strong></p><p id="19cd68c6-a01e-8079-b6e8-cfb802dad0b2" class="">您在数据处理方面享有以下权利，但部分权利在业务连续性和内部分析需求下可能受到适当限制：</p><p id="19cd68c6-a01e-8083-a8d2-d6718e927a16" class="">•	<strong>访问权</strong>：您有权查询我们所收集的您的个人数据，但对于部分汇总分析数据可能无法逐项提供详细信息。</p><p id="19cd68c6-a01e-80f7-b89d-c6c130c3fd31" class="">•	<strong>更正权</strong>：如发现数据不准确，您可提出更正要求，但对于已用于内部分析的数据更正请求，我们保留适当延迟处理的权利。</p><p id="19cd68c6-a01e-80e1-80e7-cdbd21fef2b5" class="">•	<strong>删除权</strong>：在符合法律要求及业务连续性需要下，您可要求删除个人数据；但对于部分统计数据或已脱敏信息，删除请求可能无法全部满足。</p><p id="19cd68c6-a01e-80f8-a100-d841b7411ba1" class="">•	<strong>数据可携带权</strong>：您有权以结构化、常用且机器可读的格式获取个人数据，但此类数据可能仅限于特定服务功能范围内。</p><p id="19cd68c6-a01e-80f0-9398-fc12bcaa3acf" class="">•	<strong>撤回同意权</strong>：您可随时撤回对数据处理的同意，但撤回后可能导致部分服务功能无法正常使用，同时对于已经开展的商业用途数据处理，撤回同意不影响其合法性。</p><p id="19cd68c6-a01e-8032-975f-e922fb17f7c1" class="">7.3 <strong>隐私政策补充说明</strong></p><p id="19cd68c6-a01e-806e-b4d7-f83e01730f82" class="">•	隐私政策与本协议同等构成双方权利义务的基础文件。</p><p id="19cd68c6-a01e-80bd-a86a-df9e585ee5ce" class="">•	当隐私政策更新时，我们将在应用内或通过电子邮件及时通知您，但对于部分业务使用的数据处理模式更新，通知可能存在适当延迟。</p><p id="19cd68c6-a01e-80b0-8061-f0e9048a606b" class=""><strong>8. 知识产权及用户生成内容</strong></p><p id="19cd68c6-a01e-8022-b1ec-f449477cb355" class="">8.1 <strong>知识产权保护</strong></p><p id="19cd68c6-a01e-8062-881b-f68d0f0f9478" class="">•	本应用中的所有内容（包括文字、图像、图标、软件、源代码、技术、界面设计、文档等）均受相关知识产权法律保护。</p><p id="19cd68c6-a01e-805c-b97f-d811f536ffa9" class="">•	除非获得开发者明确书面授权，用户不得复制、修改、传播或用于其他商业用途。</p><p id="19cd68c6-a01e-8063-b61c-ef8e459868cb" class="">8.2 <strong>用户生成内容（UGC）</strong></p><p id="19cd68c6-a01e-80a4-bf78-d70201b4e2ca" class="">•	用户在本应用中上传、发布、存储的内容，其知识产权归用户所有，但用户同意授予开发者在全球范围内免费、非独占、永久使用、复制、修改、编辑、分发和展示的许可。</p><p id="19cd68c6-a01e-80f0-892e-c1be7e30ea0a" class="">•	用户须确保上传内容不侵犯第三方权利，因侵权产生的责任由用户承担。</p><p id="19cd68c6-a01e-80e9-88d0-e5012c0e80da" class="">8.3 <strong>反馈与建议</strong></p><p id="19cd68c6-a01e-80d9-a395-c23df3d5ac87" class="">•	用户提交的反馈、建议或创意将被视为无偿授权给开发者，除非双方另有书面约定，开发者有权在不支付费用的情况下使用并商业化该等内容，同时尊重用户署名权。</p><p id="19cd68c6-a01e-809b-b304-e7ec1d173c88" class=""><strong>9. 广告、第三方内容与链接</strong></p><p id="19cd68c6-a01e-8036-849d-ced6f3429a5e" class="">9.1 <strong>广告展示</strong></p><p id="19cd68c6-a01e-805e-8f28-dec046bcb13e" class="">•	本应用可能展示第三方广告或推广信息，这些内容不代表开发者的观点。</p><p id="19cd68c6-a01e-80c1-bb37-f6e7a932f81a" class="">•	对第三方广告内容的真实性、合法性及完整性，我们不承担任何责任。</p><p id="19cd68c6-a01e-800e-ae77-f8116b842539" class="">9.2 <strong>第三方链接</strong></p><p id="19cd68c6-a01e-8071-8d23-e8df1c6d88bd" class="">•	本应用中可能包含指向第三方网站或服务的链接。</p><p id="19cd68c6-a01e-8026-98e7-ca3414db8868" class="">•	对于第三方平台的内容、隐私政策和服务条款，我们不承担责任，建议用户仔细阅读相关声明。</p><p id="19cd68c6-a01e-80a5-8cd9-cc8175292555" class=""><strong>10. 费用与支付（如适用）</strong></p><p id="19cd68c6-a01e-80bd-a5f6-d5720d902064" class="">10.1 <strong>免费服务与付费项目</strong></p><p id="19cd68c6-a01e-80e1-8348-da7a932c255b" class="">•	本应用提供基础功能的免费服务，同时可能提供增值付费服务或订阅模式。</p><p id="19cd68c6-a01e-806d-8b51-dacb6ebda63b" class="">•	付费服务的具体内容、收费标准、支付方式及退款政策以应用内公告或独立协议为准。</p><p id="19cd68c6-a01e-80e9-9631-ff5bf33950ba" class="">10.2 <strong>支付与退款</strong></p><p id="19cd68c6-a01e-8037-bd70-ca0a0cc271e7" class="">•	所有支付均通过第三方支付平台进行，您在支付前应仔细阅读并同意相关平台的服务协议。</p><p id="19cd68c6-a01e-801f-90a2-f28d74492f9f" class="">•	除非法律规定或因服务质量问题，付费服务一经支付后，未经开发者同意不得单方面要求退款。</p><p id="19cd68c6-a01e-80c1-a8e1-d4dacafd8062" class=""><strong>11. 免责声明、风险承担及责任限制</strong></p><p id="19cd68c6-a01e-80c6-9416-c7876522edd3" class="">11.1 <strong>免责声明</strong></p><p id="19cd68c6-a01e-80d3-9cce-c0a754b8a5c5" class="">•	本应用及其内容、服务均按“现状”提供，对服务的适用性、准确性或安全性不作任何明示或暗示保证。</p><p id="19cd68c6-a01e-8044-b437-f5630a773c4c" class="">•	因网络问题、系统故障或其他不可抗力因素造成的风险，开发者不承担超出法律规定范围的责任。</p><p id="19cd68c6-a01e-8033-9aae-fd1802027257" class="">11.2 <strong>风险承担</strong></p><p id="19cd68c6-a01e-8071-84e2-cb9784fc13eb" class="">•	用户明确知悉并接受使用本应用可能存在的数据丢失、服务中断、信息延迟及其他不可预见风险。</p><p id="19cd68c6-a01e-80fa-b462-ccb85feea8c6" class="">•	用户应自行为使用本应用而采取必要的安全措施，避免因个人疏忽而造成损失。</p><p id="19cd68c6-a01e-80b5-b8b9-f2b4d528e932" class="">11.3 <strong>责任限制</strong></p><p id="19cd68c6-a01e-8022-98d4-d0350187803b" class="">•	在适用法律允许的范围内，因使用本应用而产生的直接或间接损失，开发者及其关联方的累计赔偿责任不超过用户在该服务中实际支付的费用（如适用）。</p><p id="19cd68c6-a01e-80b3-b881-ce9d5cc3020b" class=""><strong>12. 数据传输与跨境处理</strong></p><p id="19cd68c6-a01e-8016-8e08-e7511718e978" class="">12.1 <strong>数据传输</strong></p><p id="19cd68c6-a01e-80f7-9202-d48d02d177af" class="">•	为提供全球化服务，本应用可能将用户数据传输至其他国家或地区，数据传输将遵循相关法律法规要求。</p><p id="19cd68c6-a01e-80b1-9c79-fd9be6961e08" class="">•	用户同意并授权其个人数据在数据接收国按当地法律标准进行处理。</p><p id="19cd68c6-a01e-8093-872b-dff76bd90f2d" class="">12.2 <strong>跨境数据保护</strong></p><p id="19cd68c6-a01e-8086-81a7-c567a7a927c7" class="">•	我们将采取必要的技术和管理措施，确保跨境数据传输过程中用户数据的安全和隐私保护，并在必要时与第三方签署数据保护协议。</p><p id="19cd68c6-a01e-809f-90bc-e1e7ec13e44e" class=""><strong>13. 通知、通讯及客户支持</strong></p><p id="19cd68c6-a01e-80cf-85c2-f788a65145ce" class="">13.1 <strong>通知方式</strong></p><p id="19cd68c6-a01e-80fc-8ee3-e4e36b2883ed" class="">•	与本协议相关的通知、公告或变更信息，开发者将通过应用内公告、电子邮件、短信或其他适当方式发送给用户。</p><p id="19cd68c6-a01e-8004-839e-c24689db8139" class="">•	用户有责任保持联系方式（如电子邮件地址、手机号码等）的最新状态。</p><p id="19cd68c6-a01e-8030-b07a-f70e939d0a4f" class="">13.2 <strong>客户支持</strong></p><p id="19cd68c6-a01e-8077-a533-ee2ce4bdbf9e" class="">•	我们设有专门的客户支持渠道，以解答用户疑问、处理投诉及提供技术支持。</p><p id="19cd68c6-a01e-8004-b066-f28b2cd24daa" class="">•	如需帮助，请通过以下方式联系我们：</p><p id="19cd68c6-a01e-80f2-bb5f-d23ca4087be4" class="">•	电子邮箱：public@services.annopia.com</p><p id="19cd68c6-a01e-80bf-b4cf-cc6f396d448e" class="">•	官方网站或应用内反馈入口</p><p id="19cd68c6-a01e-80a2-afff-c13211c8034f" class=""><strong>14. 争议解决与适用法律</strong></p><p id="19cd68c6-a01e-80d0-a0f1-e45f5a0efb0e" class="">14.1 <strong>适用法律</strong></p><p id="19cd68c6-a01e-8065-903e-eb61b9d71750" class="">•	本协议的订立、执行、解释及争议解决均适用中华人民共和国相关法律。</p><p id="19cd68c6-a01e-80b8-acf6-f940a1b6306f" class="">•	如本协议部分条款与现行法律法规存在冲突，则以法律规定为准。</p><p id="19cd68c6-a01e-8064-8d9a-da2a13e0de38" class="">14.2 <strong>争议解决方式</strong></p><p id="19cd68c6-a01e-8008-a2a8-f35343af288d" class="">•	对于因本协议产生或与本协议有关的争议，双方应首先通过友好协商解决。</p><p id="19cd68c6-a01e-802f-85eb-c3ca73a89e89" class="">•	协商未果的，用户同意将争议提交至开发者所在地有管辖权的法院进行诉讼。</p><p id="19cd68c6-a01e-8065-aeb6-ecc76a2be5fc" class="">•	用户明确放弃以集体名义提起诉讼的权利，所有争议须由单一用户个人提起。</p><p id="19cd68c6-a01e-8045-8b67-f9e6e14425a8" class=""><strong>15. 协议的终止与后续处理</strong></p><p id="19cd68c6-a01e-807e-8a76-f43eb6eea881" class="">15.1 <strong>用户终止使用</strong></p><p id="19cd68c6-a01e-80ed-b121-c8469cf7e24b" class="">•	用户可随时停止使用本应用，终止使用并不解除用户在协议存续期间产生的法律责任。</p><p id="19cd68c6-a01e-804c-848f-d64dc082a52e" class="">•	账户注销或数据删除请求应按照隐私政策中相关流程执行，但注销后部分历史数据可能因统计或合规原因被保留或匿名化处理。</p><p id="19cd68c6-a01e-8038-ba6a-da2deacdefbe" class="">15.2 <strong>开发者终止服务</strong></p><p id="19cd68c6-a01e-804b-a2fa-f45d2a64fe47" class="">•	我们保留在任何时间无需提前通知、单方面终止或暂停部分或全部服务的权利。</p><p id="19cd68c6-a01e-8023-9b33-cdb7cffa412b" class="">•	因服务终止导致的数据处理或损失，除法律另有规定外，我们不承担额外赔偿责任，但将尽力提供数据导出支持。</p><p id="19cd68c6-a01e-8059-a985-c167246f2d68" class="">15.3 <strong>协议终止后的数据处理</strong></p><p id="19cd68c6-a01e-80ba-a8c2-d9ee4a00ed04" class="">•	协议终止后，用户在本应用中的所有权限将自动失效。</p><p id="19cd68c6-a01e-8037-b4d6-ef924f42ee07" class="">•	用户数据将按照隐私政策中约定的保留期限处理，超出期限的数据将被删除或匿名化处理。</p><p id="19cd68c6-a01e-80d8-9605-d59c65a39775" class=""><strong>16. 附则</strong></p><p id="19cd68c6-a01e-80ab-8dd2-cf04050c094e" class="">16.1 <strong>完整协议</strong></p><p id="19cd68c6-a01e-8082-baee-c74f5fc25232" class="">•	本协议（包括隐私政策及相关补充条款）构成用户与开发者之间关于使用本应用的完整协议，并取代此前所有口头或书面约定。</p><p id="19cd68c6-a01e-80bb-b13a-f111c224fef4" class="">16.2 <strong>条款分割</strong></p><p id="19cd68c6-a01e-80d3-99dd-c8ee1c6572fc" class="">•	如本协议的任何条款被认定为无效或不可执行，其余条款仍继续有效，其无效部分不影响其他条款的法律效力。</p><p id="19cd68c6-a01e-80ef-af8f-c03fe004c376" class="">16.3 <strong>权利保留</strong></p><p id="19cd68c6-a01e-807b-a54e-cefac0dc342f" class="">•	开发者未行使或延迟行使本协议项下任何权利，不构成对此等权利的放弃。</p><p id="19cd68c6-a01e-801d-8977-d831799eb41a" class="">16.4 <strong>语言版本</strong></p><p id="19cd68c6-a01e-8060-832e-efbcc23c724d" class="">•	本协议为中文版本，若存在翻译版本，英文 ( EN ) 版本应作为解释和执行的最终依据。</p><p id="19cd68c6-a01e-8099-a21c-ef0495da2122" class="">16.5 <strong>其他约定</strong></p><p id="19cd68c6-a01e-80bb-b2ff-fb4076684a72" class="">•	用户对本协议中未尽事宜或出现争议时，开发者可根据实际情况制定补充规定，该等补充规定与本协议具有同等法律效力。</p><p id="19cd68c6-a01e-80b3-8127-d31da56a2c90" class="">
+</p><p id="19cd68c6-a01e-8084-8ac8-e125a1b3cb12" class="">All Rights Reserved, 2025©Annopia</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
