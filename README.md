@@ -17,8 +17,6 @@ The agreements listed above apply to all content below. This means that when you
 - ThomasB Internet Services General Licenses
 - Open Source Licenses (Like GNU, MIT Licenses) (if available)
 
-
-Any question with the contents, email: public@mahaoxuan.top
-
 ---
+Any question with the contents, email: public@mahaoxuan.top
 Copyright 2022-2025@ThomasB Internet Services Infrastructure
