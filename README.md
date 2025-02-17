@@ -18,5 +18,6 @@ The agreements listed above apply to all content below. This means that when you
 - Open Source Licenses (Like GNU, MIT Licenses) (if available)
 
 ---
-Any question with the contents, email: public@mahaoxuan.top
+Any question with the contents, email: public@services.annopia.com
+
 Copyright 2022-2025@ThomasB Internet Services Infrastructure
