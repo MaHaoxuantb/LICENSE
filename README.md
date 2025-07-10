@@ -10,7 +10,10 @@ The LICENSE is the license for this repostories.
 - ConiWords1
   - [ConiWords-CN](/ConiWords/ConiWords_UserAgreements_CN.html)
   - [ConiWords-EN](/ConiWords/ConiWords_UserAgreements_EN.html)
- 
+
+### Service Licenses:
+- [LinecoFlow-AUAPP-PRC](/LinecoFlow/LinecoFlow-AUAPP-PRC.html)
+
 ### Open Source Licenses:
 - [GPL3.0-EN](/OpenSource/GPL_3.0_EN.md)
 
