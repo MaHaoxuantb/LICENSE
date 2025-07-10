@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Addendum to User Agreement and Privacy Policy for Users in the People&#x27;s Republic of China (PRC)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-default { background-color: rgba(84, 72, 49, 0.08); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1a1d68c6-a01e-81d9-9f13-e49a4ea33f4f" class="page sans"><header><h1 class="page-title">Addendum to User Agreement and Privacy Policy for Users in the People&#x27;s Republic of China (PRC)</h1><p class="page-description"></p></header><div class="page-body"><p id="1a1d68c6-a01e-80fa-a3b5-d9e5db4b7e26" class=""><em>(This Addendum supplements other agreements for LinecoFlow services.)</em></p><p id="1a1d68c6-a01e-8084-b01b-ec3dcf4125e9" class=""><strong>Effective Date: Jul 10, 2025</strong></p><p id="22cd68c6-a01e-801b-a4e6-e02538b58bef" class="">
+</p><p id="22cd68c6-a01e-809d-8325-d4a777680ae8" class="">We are LinecoFlow. Visit: LinecoFlow.com.</p><p id="22cd68c6-a01e-80ef-be17-c657d7a8718f" class="">
+</p><h3 id="22cd68c6-a01e-8062-bb68-f55838bd9746" class="">Why this Agreement? (this part is NOT a part of the agreement)</h3><p id="22cd68c6-a01e-806d-ab27-ff67e36cbccb" class="">This agreement is used to let you know that your data could be transferred to other countries. </p><p id="22cd68c6-a01e-8036-9109-c35ca33a37e0" class="">Plus, to let you know, that we will keep follow local laws and regulations.</p><p id="22cd68c6-a01e-8030-adb3-c591969b85a1" class=""><strong>IMPORTANT CHANGES (than original):</strong></p><p id="22cd68c6-a01e-8022-a486-fc26c44a30d3" class="">We keep working for our consumer’s rights and privacy. But we have to comply with PRC laws and regulations. That some of the information could be provide to authority for laws, even if data appears encrypted during use.</p><hr id="22cd68c6-a01e-80bc-82dd-fb187f195ef9"/><h3 id="22cd68c6-a01e-80f5-9a5c-f08819a20d27" class="">0. Conflits Solving</h3><ol type="a" id="1a1d68c6-a01e-8037-8752-f181c69819ea" class="numbered-list" start="1"><li>This agreement is to better serve our customers in People&#x27;s Republic of China (PRC). This agreement have the legal rights to be above these licenses, if there’s any conflicts:<ul id="1a1d68c6-a01e-80ba-adfe-f46ee4202918" class="bulleted-list"><li style="list-style-type:disc">ThomasBInternetServices General Licenses:<ul id="1a1d68c6-a01e-8086-9b90-e74f20b5dd1d" class="bulleted-list"><li style="list-style-type:circle"><em>User Agreement</em></li></ul><ul id="1a1d68c6-a01e-8085-ba47-c8e12df91689" class="bulleted-list"><li style="list-style-type:circle"><em>Privacy Policy</em></li></ul></li></ul><ul id="1a1d68c6-a01e-8078-9d12-fed496c070df" class="bulleted-list"><li style="list-style-type:disc">Any other agreements you signed with LinecoFlow. Notice, this does NOT include the previous versions for this agreement.</li></ul></li></ol><ol type="a" id="22cd68c6-a01e-80e6-8733-e7f6904ccfb2" class="numbered-list" start="2"><li> Any conflicts for different language version of this agreement should always according to English version.</li></ol><hr id="22cd68c6-a01e-80e0-8fbb-dd71786ad83b"/><h2 id="1a1d68c6-a01e-8002-9440-d58032c5eb7e" class="">1. Scope &amp; Authority of This Addendum</h2><p id="1a1d68c6-a01e-8073-bd8b-ef83ed50b366" class="">This Addendum is legally binding for all users accessing or using our services within the People’s Republic of China (PRC).</p><ul id="1a1d68c6-a01e-806a-8009-faee022aa6f2" class="bulleted-list"><li style="list-style-type:disc">In case of any <strong>conflicts between this Addendum and other agreements, this Addendum shall prevail</strong> for PRC users.</li></ul><ul id="1a1d68c6-a01e-803d-9d58-ef705125c096" class="bulleted-list"><li style="list-style-type:disc"><strong>If there are multiple language versions of this agreement, the English version shall be the authoritative version</strong> for interpretation and enforcement.</li></ul><ul id="1a1d68c6-a01e-8099-8170-fa042477589c" class="bulleted-list"><li style="list-style-type:disc">By continuing to use our services, <strong>users fully accept all terms without reservation</strong>.</li></ul><hr id="1a1d68c6-a01e-80b4-9492-c40c475e70d2"/><h2 id="1a1d68c6-a01e-8074-9933-dd358766915e" class="">2. Compliance with PRC Laws &amp; Government Directives</h2><ul id="1a1d68c6-a01e-80ce-8855-d2174b9995e9" class="bulleted-list"><li style="list-style-type:disc">We <strong>comply fully</strong> with PRC laws, including the <strong>Personal Information Protection Law (PIPL), Data Security Law (DSL), and Cybersecurity Law</strong>.</li></ul><ul id="1a1d68c6-a01e-80b4-ad0b-f9c858d35ecb" class="bulleted-list"><li style="list-style-type:disc">We <strong>reserve the right to modify, restrict, suspend, or terminate any feature or service at our sole discretion</strong> if required by PRC regulatory authorities.</li></ul><ul id="1a1d68c6-a01e-803e-93da-dbe1bc8494ae" class="bulleted-list"><li style="list-style-type:disc">Users agree that their <strong>continued access to our services is conditional upon adherence to Chinese regulatory standards and our policies</strong>.</li></ul><hr id="1a1d68c6-a01e-809d-b596-ccef8f6e9d41"/><h2 id="1a1d68c6-a01e-804c-863c-e95988d19223" class="">3. Data Collection, Processing &amp; Expanded Rights</h2><ul id="1a1d68c6-a01e-80c6-b2d3-cb8a3cfeeda3" class="bulleted-list"><li style="list-style-type:disc">Users <strong>irrevocably grant us</strong> the right to collect, process, analyze, and store <strong>all necessary data</strong> to enhance service functionality, security, and compliance.</li></ul><ul id="1a1d68c6-a01e-801d-9231-eb7e6daefb3c" class="bulleted-list"><li style="list-style-type:disc"><strong>Collected Data Includes but Is Not Limited To:</strong><ul id="1a1d68c6-a01e-8066-a056-c3d19d7ffc3c" class="bulleted-list"><li style="list-style-type:circle">Personal identifiers (e.g., username, contact details).</li></ul><ul id="1a1d68c6-a01e-8081-b3a0-fc7bd6eccb8a" class="bulleted-list"><li style="list-style-type:circle">Device, network, and system configurations.</li></ul><ul id="1a1d68c6-a01e-809b-b4c2-c33dfacc2b7f" class="bulleted-list"><li style="list-style-type:circle"><strong>Usage behavior, interaction logs, and accessibility metrics</strong>.</li></ul><ul id="1a1d68c6-a01e-8096-88f2-ca63a7539fbb" class="bulleted-list"><li style="list-style-type:circle"><strong>Metadata and derived analytical data</strong> to optimize user experience.</li></ul><ul id="1a1d68c6-a01e-80a9-b923-dffeecbad0f2" class="bulleted-list"><li style="list-style-type:circle"><strong>Location-related information</strong>, where necessary.</li></ul></li></ul><ul id="1a1d68c6-a01e-803e-8135-e58bff6cfb0e" class="bulleted-list"><li style="list-style-type:disc">Users <strong>agree not to alter or interfere with data collection mechanisms</strong> implemented for service quality, legal compliance, and operational efficiency.</li></ul><hr id="1a1d68c6-a01e-80f4-97cd-ee6324fe74bd"/><h2 id="1a1d68c6-a01e-80e3-9202-d5b7b517e45b" class="">4. Data Storage, International Transfers &amp; User Acknowledgment</h2><h3 id="1a1d68c6-a01e-8048-a234-ed104c25cd98" class="">a. <strong>Primary Data Storage</strong></h3><ul id="1a1d68c6-a01e-8085-99f1-e0d4fa3f2084" class="bulleted-list"><li style="list-style-type:disc">User data will be <strong>stored and processed within the PRC</strong> as per local regulatory requirements.</li></ul><h3 id="1a1d68c6-a01e-808e-acfe-c37f0be42f9e" class="">b. <strong>Cross-Border Data Processing – User Consent</strong></h3><ul id="1a1d68c6-a01e-80de-9048-ddfef921bfc4" class="bulleted-list"><li style="list-style-type:disc">Users <strong>expressly acknowledge and consent</strong> that <strong>certain data may be transferred, stored, or processed on servers located outside of the PRC</strong>, including but not limited to <strong>the United States, Europe, and other jurisdictions</strong>.</li></ul><ul id="1a1d68c6-a01e-801b-be7b-d23052f52bbf" class="bulleted-list"><li style="list-style-type:disc"><strong>Users waive objections to international data processing</strong>, provided it is done in compliance with applicable security standards.</li></ul><ul id="1a1d68c6-a01e-802c-80ec-fee5c910bd2c" class="bulleted-list"><li style="list-style-type:disc">We <strong>reserve the right to select, modify, or migrate data storage infrastructure</strong> at our discretion without prior user notification.</li></ul><h3 id="1a1d68c6-a01e-807e-a80a-ca39292f207f" class="">c. <strong>Disclosure to Authorities &amp; Third Parties</strong></h3><ul id="1a1d68c6-a01e-80d7-b774-d31bbe533a2d" class="bulleted-list"><li style="list-style-type:disc">Users <strong>fully understand and agree</strong> that we may disclose <strong>personal or anonymized information</strong>:<ul id="1a1d68c6-a01e-8084-ae31-eb64fb519086" class="bulleted-list"><li style="list-style-type:circle"><strong>To PRC law enforcement agencies, regulatory bodies, or courts, in accordance with applicable legal procedures.</strong></li></ul><ul id="1a1d68c6-a01e-80ee-a109-f37efafc872f" class="bulleted-list"><li style="list-style-type:circle">To <strong>authorized third-party service providers</strong>, including but not limited to <strong>analytics platforms, cloud computing services, fraud prevention systems, and content moderation tools</strong>.</li></ul><ul id="1a1d68c6-a01e-80e8-ba37-c2ad3388a9a9" class="bulleted-list"><li style="list-style-type:circle">To <strong>protect system integrity, enforce policies, or prevent disruptive activities</strong>.</li></ul></li></ul><hr id="1a1d68c6-a01e-8074-ac70-ebf4edd5ee41"/><h2 id="1a1d68c6-a01e-8081-83a9-ec7247afe748" class="">5. Acceptable Use Policy &amp; User Obligations</h2><ul id="1a1d68c6-a01e-8011-af06-f815e9ad6a58" class="bulleted-list"><li style="list-style-type:disc">Users <strong>must not engage in activities that circumvent, disrupt, or modify</strong> network access restrictions, content delivery frameworks, or <strong>legally mandated operational controls</strong>.</li></ul><ul id="1a1d68c6-a01e-806f-8255-ce59c3492274" class="bulleted-list"><li style="list-style-type:disc"><strong>Unauthorized access to or interference with system operations is strictly prohibited</strong> and may result in <strong>permanent account termination without prior notice</strong>.</li></ul><ul id="1a1d68c6-a01e-802a-8797-ee29d42f1260" class="bulleted-list"><li style="list-style-type:disc">We reserve the right to <strong>limit or restrict access to features, services, or content</strong> based on security risks, compliance concerns, or operational needs.</li></ul><hr id="1a1d68c6-a01e-8088-a9ea-ce0655decb06"/><h2 id="1a1d68c6-a01e-80af-ab8c-d379df73b0a2" class="">6. Enforcement, Liability &amp; Indemnification</h2><h3 id="1a1d68c6-a01e-8050-a874-d083a5f1374e" class="">a. <strong>Enforcement Discretion</strong></h3><ul id="1a1d68c6-a01e-8071-ba27-f1e095c1e956" class="bulleted-list"><li style="list-style-type:disc">We <strong>retain full authority to interpret, modify, or enforce this agreement</strong> as necessary to align with evolving regulatory standards.</li></ul><ul id="1a1d68c6-a01e-8007-a220-c14ccc8bf91d" class="bulleted-list"><li style="list-style-type:disc">Users <strong>waive the right to contest enforcement actions</strong> that result from policy violations, compliance requirements, or operational decisions.</li></ul><h3 id="1a1d68c6-a01e-8067-b4b4-f3ccba32415b" class="">b. <strong>Limitation of Liability</strong></h3><ul id="1a1d68c6-a01e-8003-86a5-fc3a806c86cc" class="bulleted-list"><li style="list-style-type:disc">We <strong>shall not be held liable</strong> for:<ul id="1a1d68c6-a01e-80f9-9169-d4e2307b0482" class="bulleted-list"><li style="list-style-type:circle">Any <strong>service disruption, access restriction, or data unavailability</strong> caused by compliance requirements, governmental directives, or third-party infrastructure failures.</li></ul><ul id="1a1d68c6-a01e-80e8-b8bc-de22954629ff" class="bulleted-list"><li style="list-style-type:circle"><strong>User decisions, unauthorized configurations, or external disruptions</strong> that impact service performance.</li></ul><ul id="1a1d68c6-a01e-806a-b9e2-ef3eb41fa106" class="bulleted-list"><li style="list-style-type:circle"><strong>Content restrictions imposed by regulatory authorities</strong>, including content modification, filtering, or removal.</li></ul></li></ul><h3 id="1a1d68c6-a01e-80c7-8f86-e2aec24e3b94" class="">c. <strong>User Indemnification</strong></h3><ul id="1a1d68c6-a01e-8074-89ac-d07c82795c57" class="bulleted-list"><li style="list-style-type:disc">Users <strong>agree to indemnify, defend, and hold harmless</strong> our company from <strong>any claims, legal actions, or liabilities arising from violations of PRC laws, misuse of services, or unauthorized modifications</strong> of application functionality.</li></ul><hr id="1a1d68c6-a01e-8029-ae0f-c66e82ad90cf"/><h2 id="1a1d68c6-a01e-8075-8eeb-ed0e6bf1768e" class="">7. User Rights &amp; Data Control Requests</h2><p id="1a1d68c6-a01e-8091-afbf-ed1fe83edd59" class="">Under PRC law, users <strong>may request the following</strong>, subject to review:</p><ul id="1a1d68c6-a01e-80bf-befc-c2d6f7230262" class="bulleted-list"><li style="list-style-type:disc"><strong>Access &amp; Copy Requests</strong>: Obtain a record of stored personal data.</li></ul><ul id="1a1d68c6-a01e-8030-85ce-e60b1a437b52" class="bulleted-list"><li style="list-style-type:disc"><strong>Correction &amp; Deletion Requests</strong>: Modify or delete inaccurate personal information.</li></ul><ul id="1a1d68c6-a01e-809f-86c0-f574e795347a" class="bulleted-list"><li style="list-style-type:disc"><strong>Processing Restrictions</strong>: Request limits on data processing (which may affect service functionality).</li></ul><ul id="1a1d68c6-a01e-804c-93cb-eda8f6728129" class="bulleted-list"><li style="list-style-type:disc"><strong>Account &amp; Data Removal</strong>: Submit formal requests for account deactivation and data erasure.</li></ul><ul id="1a1d68c6-a01e-80b1-8622-e9232e6c73c1" class="bulleted-list"><li style="list-style-type:disc"><strong>We retain the right to delay, deny, or conditionally approve such requests</strong> based on legal, operational, or compliance factors.</li></ul><ul id="1a1d68c6-a01e-8056-aa30-cba78a5a5eae" class="bulleted-list"><li style="list-style-type:disc">Requests must be submitted via <strong>[Contact Information]</strong>, and processing times may vary <strong>at our sole discretion</strong>.</li></ul><hr id="1a1d68c6-a01e-8059-b055-db247a48e5b5"/><h2 id="1a1d68c6-a01e-80ad-95d2-effb27d9a3dd" class="">8. Policy Updates &amp; Future Modifications</h2><ul id="1a1d68c6-a01e-8020-9a87-dbd21a9fe13d" class="bulleted-list"><li style="list-style-type:disc">We <strong>reserve the right to update or modify</strong> this Addendum <strong>at any time without prior user consent</strong>.</li></ul><ul id="1a1d68c6-a01e-8013-b685-d76b6e808c6e" class="bulleted-list"><li style="list-style-type:disc">Users <strong>accept that continued use of our services after updates constitutes acceptance</strong> of the revised terms.</li></ul><ul id="1a1d68c6-a01e-80a2-b62a-ecc6444f6439" class="bulleted-list"><li style="list-style-type:disc">Any modifications will be communicated through <strong>[email, website notifications, or in-app messages]</strong>.</li></ul><hr id="1a1d68c6-a01e-80b9-ba3d-db1124714ca2"/><h2 id="1a1d68c6-a01e-80e8-92ad-ea700db9c2f3" class="">9. Governing Law &amp; Dispute Resolution</h2><ul id="1a1d68c6-a01e-80cb-b372-f626889a47cd" class="bulleted-list"><li style="list-style-type:disc">This Addendum is governed by <strong>the laws of the PRC</strong>.</li></ul><ul id="1a1d68c6-a01e-8005-ad34-d4ceae8b32ce" class="bulleted-list"><li style="list-style-type:disc">Any disputes <strong>shall be resolved through arbitration</strong> in a jurisdiction of our choosing.</li></ul><ul id="1a1d68c6-a01e-80a6-9acc-fb12b6a95c41" class="bulleted-list"><li style="list-style-type:disc">We <strong>retain sole authority to interpret and enforce</strong> this Addendum.</li></ul><hr id="1a1d68c6-a01e-8022-8006-d32a2cd3890f"/><h2 id="1a1d68c6-a01e-801c-86ef-d17403587109" class="">10. Contact Information</h2><p id="1a1d68c6-a01e-80e7-8128-c2ae600a0b00" class="">For inquiries related to this Addendum, contact:</p><p id="1a1d68c6-a01e-805c-9b00-dbb9428b0931" class="">Public@services.annopia.com</p><p id="1a1d68c6-a01e-8047-8fcd-c74723710c94" class="">
+</p><p id="1a1d68c6-a01e-804e-a0b6-e747b4a19be8" class="">
+</p><hr id="1a1d68c6-a01e-8090-bcf0-eca9be0eb0e3"/><p id="22cd68c6-a01e-80a3-a040-f4d90dea289b" class="">All rights reserved, </p><p id="1a1d68c6-a01e-80c2-9c8b-fe6fd6b55aa0" class=""><strong>©2025 LinecoFlow.</strong></p><p id="1a1d68c6-a01e-80cf-93cf-c052fc68ba00" class=""><mark class="highlight-gray">A ThomasB Internet Services Company.</mark></p><p id="22cd68c6-a01e-800b-aa00-e402d46c0b47" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
